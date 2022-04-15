@@ -17,4 +17,33 @@ class SecurityController extends AbstractController
             'controller_name' => 'SecurityController',
         ]);
     }
+
+    /**
+     * @Route("/login", name="login")
+     */
+    public function login(): Response
+    {
+        return $this->render('security/index.html.twig', [
+            'controller_name' => 'SecurityController',
+        ]);
+    }
+    /**
+     * @Route("/logout", name="logout")
+     */
+    public function logout(): Response
+    {
+        return $this->render('security/index.html.twig', [
+            'controller_name' => 'SecurityController',
+        ]);
+    }
+    /**
+     * @Route("/dashboard", name="dashboard")
+     */
+    public function dashborad(): Response
+    {
+        return $this->render('security/index.html.twig', [
+            'controller_name' => 'SecurityController',
+        ]);
+    }
+
 }
